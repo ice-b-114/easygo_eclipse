@@ -1,0 +1,155 @@
+2019-11-22 17:06:50.359 | ERROR    | __main__:<module>:44 - What?!
+Traceback (most recent call last):
+
+> File "D:\eclipse-workspace\split_picture\Merge_data_set.py", line 41, in <module>
+    main(r"C:/Users\JSKJ\Desktop\1","20190601_1839")
+    └ <function main at 0x00000000026E6828>
+
+  File "D:\eclipse-workspace\split_picture\Merge_data_set.py", line 12, in main
+    folder_list = os.listdir(src_path)
+                  │  │       └ 'C:/Users\\JSKJ\\Desktop\\1\\20190601_1839'
+                  │  └ <built-in function listdir>
+                  └ <module 'os' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\os.py'>
+
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:/Users\\JSKJ\\Desktop\\1\\20190601_1839'
+2019-11-22 17:07:29.105 | ERROR    | __main__:<module>:44 - error
+Traceback (most recent call last):
+
+> File "D:\eclipse-workspace\split_picture\Merge_data_set.py", line 41, in <module>
+    main(r"C:/Users\JSKJ\Desktop\1","20190601_1839")
+    └ <function main at 0x00000000026B6828>
+
+  File "D:\eclipse-workspace\split_picture\Merge_data_set.py", line 12, in main
+    folder_list = os.listdir(src_path)
+                  │  │       └ 'C:/Users\\JSKJ\\Desktop\\1\\20190601_1839'
+                  │  └ <built-in function listdir>
+                  └ <module 'os' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\os.py'>
+
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:/Users\\JSKJ\\Desktop\\1\\20190601_1839'
+2019-11-22 17:14:03.253 | ERROR    | __main__:<module>:17 - error
+Traceback (most recent call last):
+
+> File "D:\eclipse-workspace\split_picture\main.py", line 12, in <module>
+    Merge_data_set.main(filepath,name)
+    │              │    │        └ '1'
+    │              │    └ 'C:/Users\\JSKJ\\Desktop\\shenhe'
+    │              └ <function main at 0x00000000021D58B8>
+    └ <module 'Merge_data_set' from 'D:\\eclipse-workspace\\split_picture\\Merge_data_set.py'>
+
+  File "D:\eclipse-workspace\split_picture\Merge_data_set.py", line 24, in main
+    raise IOError
+
+OSError
+2019-11-23 09:44:13.830 | ERROR    | __main__:<module>:37 - error
+Traceback (most recent call last):
+
+> File "D:\eclipse-workspace\split_picture\data2.py", line 29, in <module>
+    with open(os.path.join(xml_path, "class_id.txt",encoding='utf-8-sig'), "w") as f:
+              │  │    │    └ 'D:/meiyijia_1122/'
+              │  │    └ <function join at 0x000000000267D558>
+              │  └ <module 'ntpath' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ntpath.py'>
+              └ <module 'os' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\os.py'>
+
+TypeError: join() got an unexpected keyword argument 'encoding'
+2019-11-23 09:45:24.693 | ERROR    | __main__:<module>:37 - error
+Traceback (most recent call last):
+
+> File "D:\eclipse-workspace\split_picture\data2.py", line 31, in <module>
+    gci(xml_path)
+    │   └ 'D:/meiyijia_1122/'
+    └ <function gci at 0x00000000021C7288>
+
+  File "D:\eclipse-workspace\split_picture\data2.py", line 11, in gci
+    gci(fi_d)
+    │   └ 'D:/meiyijia_1122/__MACOSX'
+    └ <function gci at 0x00000000021C7288>
+
+  File "D:\eclipse-workspace\split_picture\data2.py", line 11, in gci
+    gci(fi_d)
+    │   └ 'D:/meiyijia_1122/__MACOSX\\meiyijia_1122'
+    └ <function gci at 0x00000000021C7288>
+
+  File "D:\eclipse-workspace\split_picture\data2.py", line 11, in gci
+    gci(fi_d)
+    │   └ 'D:/meiyijia_1122/__MACOSX\\meiyijia_1122\\normal'
+    └ <function gci at 0x00000000021C7288>
+  [Previous line repeated 1 more time]
+
+  File "D:\eclipse-workspace\split_picture\data2.py", line 13, in gci
+    changee(fi_d)
+    │       └ 'D:/meiyijia_1122/__MACOSX\\meiyijia_1122\\normal\\10.12hunhe_1570874179_08\\._201910121725090077.xml'
+    └ <function changee at 0x00000000021E8F78>
+
+  File "D:\eclipse-workspace\split_picture\data2.py", line 17, in changee
+    root = ET.parse(xml)
+           │  │     └ 'D:/meiyijia_1122/__MACOSX\\meiyijia_1122\\normal\\10.12hunhe_1570874179_08\\._201910121725090077.xml'
+           │  └ <function parse at 0x00000000028AB0D8>
+           └ <module 'xml.etree.cElementTree' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\etree\\cElement...
+
+  File "C:\Users\JSKJ\AppData\Local\Programs\Python\Python37\lib\xml\etree\ElementTree.py", line 1197, in parse
+    tree.parse(source, parser)
+    │    │     │       └ None
+    │    │     └ 'D:/meiyijia_1122/__MACOSX\\meiyijia_1122\\normal\\10.12hunhe_1570874179_08\\._201910121725090077.xml'
+    │    └ <function ElementTree.parse at 0x00000000028AA168>
+    └ <xml.etree.ElementTree.ElementTree object at 0x0000000002CC8E88>
+  File "C:\Users\JSKJ\AppData\Local\Programs\Python\Python37\lib\xml\etree\ElementTree.py", line 598, in parse
+    self._root = parser._parse_whole(source)
+    │    │       │      │            └ <_io.BufferedReader name='D:/meiyijia_1122/__MACOSX\\meiyijia_1122\\normal\\10.12hunhe_1570874179_08\\._201910121725090077.xml'>
+    │    │       │      └ <method '_parse_whole' of 'xml.etree.ElementTree.XMLParser' objects>
+    │    │       └ <xml.etree.ElementTree.XMLParser object at 0x0000000002DB8DC8>
+    │    └ None
+    └ <xml.etree.ElementTree.ElementTree object at 0x0000000002CC8E88>
+  File "<string>", line None
+
+xml.etree.ElementTree.ParseError: not well-formed (invalid token): line 1, column 0
+2019-11-23 10:37:09.922 | ERROR    | __main__:<module>:17 - error
+Traceback (most recent call last):
+
+> File "D:\eclipse-workspace\split_picture\main.py", line 12, in <module>
+    Merge_data_set.main(filepath,name)
+    │              │    │        └ 'normal'
+    │              │    └ 'D:/meiyijia_1122/meiyijia_1122/1'
+    │              └ <function main at 0x00000000021A5798>
+    └ <module 'Merge_data_set' from 'D:\\eclipse-workspace\\split_picture\\Merge_data_set.py'>
+
+  File "D:\eclipse-workspace\split_picture\Merge_data_set.py", line 35, in main
+    raise IOError
+
+OSError
+2019-11-23 10:45:45.307 | ERROR    | __main__:<module>:17 - error
+Traceback (most recent call last):
+
+> File "D:\eclipse-workspace\split_picture\main.py", line 14, in <module>
+    class_cut.main(filepath,name)
+    │         │    │        └ 'xiejia'
+    │         │    └ 'D:/meiyijia_1122/meiyijia_1122/1'
+    │         └ <function main at 0x000000000292C9D8>
+    └ <module 'class_cut' from 'D:\\eclipse-workspace\\split_picture\\class_cut.py'>
+
+  File "D:\eclipse-workspace\split_picture\class_cut.py", line 17, in main
+    os.makedirs(save_path)
+    │  │        └ 'D:/meiyijia_1122/meiyijia_1122/jpg_cut'
+    │  └ <function makedirs at 0x0000000002125DC8>
+    └ <module 'os' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\os.py'>
+
+  File "C:\Users\JSKJ\AppData\Local\Programs\Python\Python37\lib\os.py", line 221, in makedirs
+    mkdir(name, mode)
+    │     │     └ 511
+    │     └ 'D:/meiyijia_1122/meiyijia_1122/jpg_cut'
+    └ <built-in function mkdir>
+
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'D:/meiyijia_1122/meiyijia_1122/jpg_cut'
+2019-11-26 09:55:59.771 | ERROR    | __main__:<module>:17 - error
+Traceback (most recent call last):
+
+> File "D:\eclipse-workspace\split_picture\main.py", line 12, in <module>
+    Merge_data_set.main(filepath,name)
+    │              │    │        └ '11.20beer_1574237253_02'
+    │              │    └ 'C:/Users\\JSKJ\\Desktop\\shenhe/1'
+    │              └ <function main at 0x0000000001E558B8>
+    └ <module 'Merge_data_set' from 'D:\\eclipse-workspace\\split_picture\\Merge_data_set.py'>
+
+  File "D:\eclipse-workspace\split_picture\Merge_data_set.py", line 35, in main
+    raise IOError
+
+OSError
