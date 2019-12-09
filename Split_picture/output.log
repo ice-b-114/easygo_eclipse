@@ -153,3 +153,38 @@ Traceback (most recent call last):
     raise IOError
 
 OSError
+2019-11-29 10:53:41.827 | ERROR    | __main__:<module>:17 - error
+Traceback (most recent call last):
+
+> File "C:\Users\JSKJ\git\repository\Split_picture\main.py", line 13, in <module>
+    data.main(filepath,name)
+    │    │    │        └ '1'
+    │    │    └ 'C:/Users\\JSKJ\\Desktop\\shenhe'
+    │    └ <function main at 0x00000000027D0CA8>
+    └ <module 'data' from 'C:\\Users\\JSKJ\\git\\repository\\Split_picture\\data.py'>
+
+  File "C:\Users\JSKJ\git\repository\Split_picture\data.py", line 9, in main
+    folder_list = os.listdir(os.path.join(mpath, mfolder)+r"_ed")
+                  │  │       │  │    │    │      └ '1'
+                  │  │       │  │    │    └ 'C:/Users\\JSKJ\\Desktop\\shenhe'
+                  │  │       │  │    └ <function join at 0x0000000002127438>
+                  │  │       │  └ <module 'ntpath' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ntpath.py'>
+                  │  │       └ <module 'os' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\os.py'>
+                  │  └ <built-in function listdir>
+                  └ <module 'os' from 'C:\\Users\\JSKJ\\AppData\\Local\\Programs\\Python\\Python37\\lib\\os.py'>
+
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:/Users\\JSKJ\\Desktop\\shenhe\\1_ed'
+2019-12-09 10:49:27.570 | ERROR    | __main__:<module>:17 - error
+Traceback (most recent call last):
+
+> File "C:\Users\JSKJ\git\repository\Split_picture\main.py", line 12, in <module>
+    Merge_data_set.main(filepath,name)
+    │              │    │        └ '1'
+    │              │    └ 'C:/Users\\JSKJ\\Desktop\\shenhe'
+    │              └ <function main at 0x0000000001EA8288>
+    └ <module 'Merge_data_set' from 'C:\\Users\\JSKJ\\git\\repository\\Split_picture\\Merge_data_set.py'>
+
+  File "C:\Users\JSKJ\git\repository\Split_picture\Merge_data_set.py", line 24, in main
+    raise IOError
+
+OSError
