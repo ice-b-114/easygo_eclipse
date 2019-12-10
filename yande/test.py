@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+'''
 import time
 from concurrent.futures import ThreadPoolExecutor
 class download_list:
@@ -29,3 +30,8 @@ executor.submit(change)
 download_list.set(114514, 98)
 time.sleep(10)
 download_list.show2()
+'''
+import time
+for i in range(10):
+    print("\r离程序退出还剩%s秒" % (9-i), end="")
+    time.sleep(1)

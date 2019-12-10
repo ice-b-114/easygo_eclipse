@@ -8,12 +8,12 @@ class download_list:
     @classmethod
     def show(cls,limit):
         while True :
-            time.sleep(2)
+            time.sleep(1)
             if list(cls.download_list.values()) == [100]*limit:
                 break
             for i,j in cls.download_list.items():
                 print('{}:{:.2f}%'.format(i,j),end=' ')
-            print('')
+            print()
     @classmethod
     def set(cls,pname,precent):
         cls.download_list[pname] = precent
@@ -68,10 +68,10 @@ def main(limit,*tag):
         all_task.append(executor.submit(download,pic_address[i],pic_name[i]))
         print("{} Downloading...".format(pic_name[i]))
     for res in as_completed(all_task):
-        print(res.result())
+        pass
     for res in all_task:
         print(res.result(),end='||')
     print()
 if __name__ == '__main__':
-    main(2,"bottomless order%3Arandom")#order%3Arandom
+    main(6,"bottomless order%3Arandom")#order%3Arandom
     print("All downloading task done")
