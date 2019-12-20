@@ -76,8 +76,8 @@ if __name__ == '__main__':
             os.makedirs(temp)
             path1 = temp
             break
-    else:
-        i+=1
+        else:
+            i+=1
     while True:
         run(1, path1)
         # run(0,path2)
