@@ -19,7 +19,6 @@ class download_list:
         cls.download_list[pname] = precent
 
 def download(img_url,pname):
-    global download_list
     sec = time.time()#计时
     r = requests.get(img_url,stream=True)
     pic_size = float(r.headers['content-length'])
