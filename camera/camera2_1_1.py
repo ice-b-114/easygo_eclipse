@@ -32,7 +32,7 @@ def run(camera_obj, path):
             return False
         elif k % 256 == 32:
             # SPACE pressed
-            img_name = path + time_flags_1 + str(img_counter).zfill(4) + '.jpg'
+            img_name = os.path.join(path,time_flags_1 + str(img_counter).zfill(4) + '.jpg')
             cv2.imwrite(img_name, frame)
             print("{} written!".format(img_name))
             img_counter += 1
